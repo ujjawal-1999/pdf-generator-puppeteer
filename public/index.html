@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Generate PDF</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <h1 class="text-center mb-3">Generate PDF</h1>
+            <form action="/" method="POST">
+              <div class="form-group">
+                <label for="url">URL</label>
+                <input
+                  type="text"
+                  id="url"
+                  name="url"
+                  class="form-control"
+                  placeholder="Enter the URL"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="path">File name</label>
+                <input
+                  type="text"
+                  id="path"
+                  name="path"
+                  class="form-control"
+                  placeholder="Enter the name with which file is to be saved"
+                />
+              </div>
+              <div class="form-group">
+                <label for="format">PDF Format</label>
+                <select name="format" id="format" class="form-control">
+                  <option value="A0">A0</option>
+                  <option value="A1">A1</option>
+                  <option value="A2">A2</option>
+                  <option value="A3" selected>A3</option>
+                  <option value="A4">A4</option>
+                  <option value="A5">A5</option>
+                  <option value="A6">A6</option>
+                  <option value="Letter">Letter</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Generate PDF
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
