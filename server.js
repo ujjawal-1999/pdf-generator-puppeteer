@@ -16,6 +16,7 @@ app.post("/", async (req, res) => {
   const path = `${req.body.path}.pdf` || "webpage.pdf";
   const browser = await puppeteer.launch({
     headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const webpage = await browser.newPage();
